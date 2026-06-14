@@ -5,7 +5,7 @@ export default function Repayment() {
   const [loans, setLoans] = useState([]);
 
   const fetchLoans = async () => {
-    const res = await fetch("http://localhost:4000/api/loans/getAllLoans", {
+    const res = await fetch("https://project-toff.onrender.com/api/loans/getAllLoans", {
       credentials: "include",
     });
 
@@ -20,7 +20,8 @@ export default function Repayment() {
   const pay = async (loanId, month) => {
     try {
       const res = await fetch(
-        `http://localhost:4000/api/loans/${loanId}/pay/${month}`,
+      
+        `https://project-toff.onrender.com/api/loans/${loanId}/pay/${month}`,
         {
           method: "PATCH",
           credentials: "include",
@@ -63,7 +64,7 @@ export default function Repayment() {
                   Pay
                 </button>
               )}
-            </div>
+            </div>  
           ))}
         </div>
       ))}

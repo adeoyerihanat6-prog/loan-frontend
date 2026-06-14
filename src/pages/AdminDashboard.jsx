@@ -10,7 +10,7 @@ export default function AdminDashboard() {
     try {
       setLoading(true);
 
-      const res = await fetch("http://localhost:4000/api/loans/getAllLoans", {
+      const res = await fetch("https://project-toff.onrender.com/api/loans/getAllLoans", {
         credentials: "include",
       });
 
@@ -36,7 +36,7 @@ export default function AdminDashboard() {
       setActionLoading(id);
 
       const res = await fetch(
-        `http://localhost:4000/api/loans/${id}/approve`,
+        `https://project-toff.onrender.com/api/loans/${id}/approve`,
         {
           method: "PATCH",
           credentials: "include",
@@ -65,7 +65,7 @@ export default function AdminDashboard() {
       setActionLoading(id);
 
       const res = await fetch(
-        `http://localhost:4000/api/loans/${id}/reject`,
+        `https://project-toff.onrender.com/api/loans/${id}/reject`,
         {
           method: "PATCH",
           credentials: "include",

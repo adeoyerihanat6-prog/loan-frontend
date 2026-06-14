@@ -14,7 +14,7 @@ export default function Loans() {
 
   useEffect(() => {
     const fetchUser = async () => {
-      const res = await fetch("http://localhost:4000/api/users/me", {
+      const res = await fetch("https://project-toff.onrender.com/api/users/me", {
         credentials: "include",
       });
 
@@ -28,7 +28,7 @@ export default function Loans() {
 
   const fetchLoans = async () => {
     try {
-      const res = await fetch("http://localhost:4000/api/loans/getAllLoans", {
+      const res = await fetch("https://project-toff.onrender.com/api/loans/getAllLoans", {
         credentials: "include",
       });
 
@@ -57,7 +57,7 @@ export default function Loans() {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:4000/api/loans/createLoan", {
+      const res = await fetch("https://project-toff.onrender.com/api/loans/createLoan", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",

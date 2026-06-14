@@ -8,7 +8,7 @@ export default function Dashboard() {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const res = await fetch("http://localhost:4000/api/users/me", {
+        const res = await fetch("https://project-toff.onrender.com/api/users/me", {
           credentials: "include",
         });
 
