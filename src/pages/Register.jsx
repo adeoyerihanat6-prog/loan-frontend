@@ -55,13 +55,15 @@ export default function Register() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-gray-900 to-gray-800 px-4 flex-col">
 
-      <h1 className="text-white text-5xl hover:text-gray-400">
-        Welcome to Rihvelle Finance
-      </h1>
+      <div className="max-w-3xl mx-auto">
+  <h1 className="text-white text-3xl sm:text-4xl md:text-5xl text-center hover:text-gray-400">
+    Welcome to Rihvelle Finance
+  </h1>
 
-      <p className="mb-20 text-white">
-        ....Secure loans. Simple repayments. Smarter financial growth
-      </p>
+  <p className="mb-12 md:mb-20 text-white text-center px-4 text-sm sm:text-base">
+    Secure loans. Simple repayments. Smarter financial growth.
+  </p>
+</div>
 
       <div className="w-full max-w-md bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 text-white">
 

@@ -45,8 +45,13 @@ export default function Login() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-black via-gray-900 to-gray-800 px-4">
 
-      <h1 className="text-white text-5xl hover:text-gray-400">Welcome Back ✨</h1>
-      <p className="mb-20 text-white">where financial confidence begins...</p>
+     <h1 className="text-white text-3xl sm:text-4xl md:text-5xl text-center hover:text-gray-400">
+  Welcome Back ✨
+</h1>
+
+<p className="mb-12 md:mb-20 text-white text-center px-4">
+  Secure loans. Simple repayments. Smarter financial growth.
+</p>
 
       <div className="w-full max-w-md bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 text-white">
 
